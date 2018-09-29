@@ -1,0 +1,1253 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-SemiBoldItalic.woff2') format('woff2'),
+          url('fonts/Montserrat-SemiBoldItalic.woff') format('woff');
+      font-weight: 600;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-Black.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-Black.woff') format('woff');
+      font-weight: 900;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-Regular.woff2') format('woff2'),
+          url('fonts/Montserrat-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-ThinItalic.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-ThinItalic.woff') format('woff');
+      font-weight: 100;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-ExtraLightItalic.woff2') format('woff2'),
+          url('fonts/Montserrat-ExtraLightItalic.woff') format('woff');
+      font-weight: 200;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-Thin.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-Thin.woff') format('woff');
+      font-weight: 100;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-ExtraLight.woff2') format('woff2'),
+          url('fonts/Montserrat-ExtraLight.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-ExtraBoldItalic.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-ExtraBoldItalic.woff') format('woff');
+      font-weight: 800;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+          url('fonts/Montserrat-ExtraBold.woff') format('woff');
+      font-weight: 800;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-SemiBoldItalic.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-SemiBoldItalic.woff') format('woff');
+      font-weight: 600;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-Light.woff2') format('woff2'),
+          url('fonts/Montserrat-Light.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-Medium.woff2') format('woff2'),
+          url('fonts/Montserrat-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-LightItalic.woff2') format('woff2'),
+          url('fonts/Montserrat-LightItalic.woff') format('woff');
+      font-weight: 300;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-BlackItalic.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-BlackItalic.woff') format('woff');
+      font-weight: 900;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-Bold.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-MediumItalic.woff2') format('woff2'),
+          url('fonts/Montserrat-MediumItalic.woff') format('woff');
+      font-weight: 500;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-ExtraBoldItalic.woff2') format('woff2'),
+          url('fonts/Montserrat-ExtraBoldItalic.woff') format('woff');
+      font-weight: 800;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-BoldItalic.woff2') format('woff2'),
+          url('fonts/Montserrat-BoldItalic.woff') format('woff');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-Light.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-Light.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates ExLight';
+      src: url('fonts/MontserratAlternates-ExtraLightItalic.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-ExtraLightItalic.woff') format('woff');
+      font-weight: 200;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-Regular.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-ThinItalic.woff2') format('woff2'),
+          url('fonts/Montserrat-ThinItalic.woff') format('woff');
+      font-weight: 100;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates ExLight';
+      src: url('fonts/MontserratAlternates-ExtraLight.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-ExtraLight.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-BlackItalic.woff2') format('woff2'),
+          url('fonts/Montserrat-BlackItalic.woff') format('woff');
+      font-weight: 900;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
+          url('fonts/Montserrat-SemiBold.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-Italic.woff2') format('woff2'),
+          url('fonts/Montserrat-Italic.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-Italic.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-Italic.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-Black.woff2') format('woff2'),
+          url('fonts/Montserrat-Black.woff') format('woff');
+      font-weight: 900;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-Medium.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-SemiBold.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-SemiBold.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-BoldItalic.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-BoldItalic.woff') format('woff');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-MediumItalic.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-MediumItalic.woff') format('woff');
+      font-weight: 500;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-ExtraBold.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-ExtraBold.woff') format('woff');
+      font-weight: 800;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat Alternates';
+      src: url('fonts/MontserratAlternates-LightItalic.woff2') format('woff2'),
+          url('fonts/MontserratAlternates-LightItalic.woff') format('woff');
+      font-weight: 300;
+      font-style: italic;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-Bold.woff2') format('woff2'),
+          url('fonts/Montserrat-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Montserrat';
+      src: url('fonts/Montserrat-Thin.woff2') format('woff2'),
+          url('fonts/Montserrat-Thin.woff') format('woff');
+      font-weight: 100;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'icomoon';
+      src: url('fonts/IcoMoon-Free.woff2') format('woff2'),
+          url('fonts/IcoMoon-Free.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  font-family: 'Montserrat';
+  /* letter-spacing: .25em; */
+  font-weight: 700;
+  /* text-stroke-width: 1px;
+  text-stroke-color: black; */
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
+  text-shadow: 0px 0px 10px black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+  h3 {
+    text-shadow: none;
+  }
+
+html {
+  background: black; }
+
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+body.noscroll {
+  overflow: hidden; }
+
+header h1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: .25em 0 0 0;
+  z-index: 999999; }
+  header h1 a {
+    display: block;
+    position: relative;
+    width: 1em;
+    height: 0px;
+    padding-bottom: 100%;
+    background: center center no-repeat transparent;
+    background-size: contain;
+    text-indent: -99999px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  font-size: .7em;
+  font-weight: 400;
+  text-align: center;
+  padding: 1em;
+  opacity: .5; }
+
+.fs {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(0%);
+  -moz-transform: translateX(-50%) translateY(0%);
+  -webkit-transform: translateX(-50%) translateY(0%);
+  transform: translateX(-50%) translateY(0%); }
+  .onpage .fs {
+    opacity: .25; }
+    .light .onpage .fs {
+      opacity: 1; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: .25; }
+  100% {
+    opacity: 1; } }
+
+#nav-dial {
+  position: absolute;
+  top: 0;
+  z-index: 9998;
+  font-family: 'Montserrat'; }
+  .onpage #nav-dial {
+    display: none;
+    height: 0; }
+  @media (max-width: 767px) {
+    #nav-dial {
+      display: none; } }
+  #nav-dial > ul {
+    position: absolute;
+    top: 0;
+    list-style: none; }
+    #nav-dial > ul > li {
+      position: absolute;
+      top: 0;
+      text-align: center;
+      width: 150px; }
+      #nav-dial > ul > li > a {
+        font-size: 1.75em;
+        text-transform: uppercase; }
+        #nav-dial > ul > li > a:hover {
+          text-decoration: none;
+          animation: blink 1s infinite; }
+
+@keyframes shift {
+  0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+    transform: translate(-50%, -50%) rotate(-5deg) skewX(0deg); }
+  41% {
+    transform: translate(-50%, -50%) rotate(5deg) skewX(10deg); }
+  42% {
+    transform: translate(-50%, -50%) rotate(-5deg) skewX(-10deg); }
+  59% {
+    transform: translate(-50%, -50%) rotate(-10deg) skewX(40deg) skewY(10deg); }
+  60% {
+    transform: translate(-50%, -50%) rotate(5deg) skewX(-40deg) skewY(-10deg); }
+  63% {
+    transform: translate(-50%, -50%) rotate(-10deg) skewX(10deg) skewY(-5deg); }
+  70% {
+    transform: translate(-50%, -50%) rotate(10deg) skewX(-50deg) skewY(-20deg); }
+  71% {
+    transform: translate(-50%, -50%) rotate(-5deg) skewX(10deg) skewY(-10deg); } }
+      #nav-dial > ul > li:nth-child(1), #nav-dial > ul > li:nth-child(3) {
+        left: calc(50vw - 75px);
+        transform: translate3d(-50%, 0, 0); }
+      #nav-dial > ul > li:nth-child(2), #nav-dial > ul > li:nth-child(4) {
+        top: calc(50vh - 25px);
+        transform: translate3d(0, -50%, 0); }
+      #nav-dial > ul > li:nth-child(1) {
+        top: calc(50vh - 25vh);
+        transform: translate3d(0, -50%, 0); }
+      #nav-dial > ul > li:nth-child(2) {
+        left: calc(50vw + 25vw);
+        transform: translate3d(-50%, 0, 0); }
+      #nav-dial > ul > li:nth-child(3) {
+        top: calc(50vh + 20vh);
+        transform: translate3d(0, -50%, 0); }
+      #nav-dial > ul > li:nth-child(4) {
+        left: calc(50vw - 25vw);
+        transform: translate3d(-50%, 0, 0); }
+
+header .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 11;
+  font-size: 1.5em;
+  width: 2em;
+  text-align: center;
+  padding: .5em 0em;
+  text-indent: .2em;
+  color: white;
+  text-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.5);
+  display: none;
+  animation: blink 1s infinite; }
+  @media (max-width: 767px) {
+    header .back {
+      display: none; } }
+  .onpage header .back {
+    display: block; }
+    @media (max-width: 767px) {
+      .onpage header .back {
+        display: none; } }
+
+header .contactus {
+  position: absolute;
+  top: 1.6em;
+  right: 0;
+  cursor: pointer;
+  z-index: 11;
+  font-size: 1.5em;
+  width: 2em;
+  text-align: center;
+  padding: .5em 0em;
+  text-indent: .2em;
+  color: white;
+  text-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.5);
+  transition: all 125ms ease-out; }
+  header .contactus.hide {
+    right: -2em; }
+
+#nav-main, #nav-social {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  font-family: 'Montserrat'; }
+  @media (max-width: 767px) {
+    #nav-main, #nav-social {
+      height: 100vh; } }
+  #nav-main > span, #nav-social > span {
+    width: 2em;
+    text-align: center; }
+  #nav-main .toggle, #nav-social .toggle {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    z-index: 11;
+    font-size: 1.5em;
+    width: 2em;
+    text-align: center;
+    padding: .5em 0em;
+    text-indent: .2em;
+    color: white;
+    text-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.5); }
+    #nav-main .toggle.connect, #nav-social .toggle.connect {
+      font-size: 1em;
+      width: auto;
+      padding: 1.5em 1em 1.5em 0em;
+      text-indent: 0; }
+    @media (max-width: 767px) {
+      #nav-main .toggle, #nav-social .toggle {
+        display: none; } }
+  #nav-main.active > ul, #nav-social.active > ul {
+    display: block;
+    padding: 1em 0;
+    opacity: 1; }
+  #nav-main.active.nav-social > ul, #nav-social.active.nav-social > ul {
+    right: 0; }
+  #nav-main.active.nav-main > ul, #nav-social.active.nav-main > ul {
+    top: 0em;
+    width: 100vw; }
+    @media (max-width: 767px) {
+      #nav-main.active.nav-main > ul, #nav-social.active.nav-main > ul {
+        height: 100vh; } }
+  #nav-main > ul, #nav-social > ul {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    opacity: 0;
+    transition: all 250ms ease-out;
+    overflow: hidden; }
+    @media (max-width: 767px) {
+      #nav-main > ul, #nav-social > ul {
+        transition: all 125ms ease-out; } }
+    #nav-main > ul > li, #nav-social > ul > li {
+      display: inline-block;
+      width: auto; }
+  #nav-main.nav-social, #nav-social.nav-social {
+    right: 0; }
+    #nav-main.nav-social .toggle, #nav-social.nav-social .toggle {
+      right: 0; }
+    #nav-main.nav-social > ul, #nav-social.nav-social > ul {
+      font-size: 1.5em;
+      top: 1.75em;
+      padding: 0 !important;
+      right: -2em;
+      text-align: center;
+      height: 100vh;
+      width: 2em; }
+      #nav-main.nav-social > ul > li, #nav-social.nav-social > ul > li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 2em; }
+        #nav-main.nav-social > ul > li > a, #nav-social.nav-social > ul > li > a {
+          margin: 0;
+          padding: 0; }
+          #nav-main.nav-social > ul > li > a:hover, #nav-social.nav-social > ul > li > a:hover {
+            text-decoration: none;
+            text-shadow: 0.1em 0.1em 1em rgba(255, 255, 255, 0.5); }
+          #nav-main.nav-social > ul > li > a > span, #nav-social.nav-social > ul > li > a > span {
+            padding: .5em 0 .5em .15em;
+            width: 2em;
+            display: block; }
+    @media (max-width: 767px) {
+      #nav-main.nav-social, #nav-social.nav-social {
+        display: none; } }
+  #nav-main.nav-main, #nav-social.nav-main {
+    left: 0; }
+    #nav-main.nav-main .toggle, #nav-social.nav-main .toggle {
+      left: 0;
+      display: none; }
+      @media (max-width: 767px) {
+        #nav-main.nav-main .toggle, #nav-social.nav-main .toggle {
+          display: block; } }
+    #nav-main.nav-main > ul, #nav-social.nav-main > ul {
+      top: -3em;
+      left: 0em;
+      padding-left: 3.25em;
+      text-align: left;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none; }
+      .onpage #nav-main.nav-main > ul, .onpage #nav-social.nav-main > ul {
+        background-color: rgba(0, 0, 0, 0.75); }
+      #nav-main.nav-main > ul > li, #nav-social.nav-main > ul > li {
+        margin-right: .5em; }
+        #nav-main.nav-main > ul > li > a, #nav-social.nav-main > ul > li > a {
+          text-transform: uppercase; }
+          #nav-main.nav-main > ul > li > a:hover, #nav-social.nav-main > ul > li > a:hover {
+            text-decoration: none;
+            text-shadow: 0.1em 0.1em 1em rgba(255, 255, 255, 0.5); }
+        #nav-main.nav-main > ul > li .socialinmain, #nav-social.nav-main > ul > li .socialinmain {
+          padding: 1em 0; }
+          #nav-main.nav-main > ul > li .socialinmain > ul, #nav-social.nav-main > ul > li .socialinmain > ul {
+            list-style: none;
+            padding: 0;
+            margin: 0; }
+            #nav-main.nav-main > ul > li .socialinmain > ul > li, #nav-social.nav-main > ul > li .socialinmain > ul > li {
+              display: inline-block;
+              padding: 0;
+              margin: 0;
+              font-size: 1.5em; }
+              #nav-main.nav-main > ul > li .socialinmain > ul > li > a:hover, #nav-social.nav-main > ul > li .socialinmain > ul > li > a:hover {
+                text-decoration: none; }
+    @media (max-width: 767px) {
+      #nav-main.nav-main > ul, #nav-social.nav-main > ul {
+        display: block;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        padding-top: 4em; }
+        #nav-main.nav-main > ul > li, #nav-social.nav-main > ul > li {
+          width: 100vw;
+          padding: 0;
+          margin: 0;
+          display: block;
+          text-align: center; }
+          #nav-main.nav-main > ul > li > a, #nav-social.nav-main > ul > li > a {
+            font-size: 1.5em;
+            display: block;
+            padding: 1em 0; } }
+
+article.page {
+  display: none;
+  position: relative;
+  min-height: 100vh;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  line-height: 1.5em; }
+  article.page section {
+    padding: 3em 4vw;
+    display: block;
+    height: calc(100vh - 2.5em);
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%); */
+   }
+    article.page section::-webkit-scrollbar {
+      display: none; }
+  article.page.home {
+    height: 100%; }
+    article.page.home img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 25vw; }
+      @media (max-width: 767px) {
+        article.page.home img {
+          width: 50vw; } }
+  article.page[data-pageid="18"] section {
+    padding: 3em 1em; }
+  article.page[data-pageid="16"] section {
+    width: 80vw;
+    max-width: 1024px;
+    margin: auto; }
+  article.page .article-content {
+    font-size: 1.05em; }
+    article.page .article-content h2 {
+      font-size: 2em;
+      font-family: 'Montserrat';
+      text-transform: uppercase; }
+      article.page .article-content h2.extratop {
+        margin-top: 1.5em; }
+  article.page.active {
+    display: block; }
+
+ul.people {
+  list-style: none;
+  margin: 3em auto 2em auto;
+  padding: 0; }
+  ul.people > li {
+    display: table-cell;
+    margin: 0;
+    padding: 0 2em;
+    vertical-align: top;
+    width: 50%; }
+    @media (max-width: 767px) {
+      ul.people > li {
+        width: 100%;
+        display: block; } }
+    ul.people > li > img {
+      display: block;
+      width: 100%;
+      margin: 0 2em 2em 0;
+      vertical-align: top; }
+      @media (max-width: 767px) {
+        ul.people > li > img {
+          width: 100% !important;
+          float: none !important;
+          margin: 0 0 2em 0 !important; } }
+    ul.people > li p {
+      margin: 0;
+      padding: 0;
+      display: block;
+      text-align: left;
+      vertical-align: top;
+      margin-top: -1.5em;
+      padding-bottom: 3em; }
+
+ul.clients {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  ul.clients > li {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+    ul.clients > li a, ul.clients > li span {
+      position: relative;
+      background: center center no-repeat transparent;
+      background-size: 75%;
+      display: inline-block;
+      width: 20vw;
+      height: 0;
+      margin: 0;
+      padding: 0 0 20vw 0;
+      margin: 0 2vw;
+      filter: grayscale(100%) brightness(0%) invert(100%);
+      opacity: 1;
+      transition: opacity 250ms ease-out; }
+      @media (max-width: 767px) {
+        ul.clients > li a, ul.clients > li span {
+          opacity: 1;
+          width: 40vw;
+          padding: 0 0 40vw 0; } }
+      ul.clients > li a:hover, ul.clients > li span:hover {
+        opacity: 1; }
+    ul.clients > li a {
+      cursor: pointer; }
+
+ul.services {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  ul.services > li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 27vw;
+    margin: 0vw 1vw 2vw 1vw;
+    text-align: left;
+    vertical-align: top; }
+    @media (max-width: 767px) {
+      ul.services > li {
+        width: 80vw; } }
+    ul.services > li h3 {
+      display: block;
+      font-size: 1.4em;
+      font-family: 'Montserrat';
+      text-transform: uppercase; }
+    ul.services > li hr {
+      background: white;
+      height: 3px;
+      display: block;
+      border: 0;
+      padding: 0; }
+  ul.services.blocks > li {
+    background: white;
+    color: black; }
+    ul.services.blocks > li h3 {
+      width: 100%;
+      text-align: center;
+      font-size: 1.2em; }
+    ul.services.blocks > li hr, ul.services.blocks > li p {
+      display: none; }
+
+ul.careers {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  ul.careers > li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 86vw;
+    margin: 0vw 1vw 2vw 1vw;
+    text-align: left;
+    vertical-align: top; }
+    @media (max-width: 767px) {
+      ul.careers > li {
+        width: 80vw; } }
+    ul.careers > li h3 {
+      display: block;
+      font-size: 1.4em;
+      font-family: 'Montserrat';
+      text-transform: uppercase; }
+    ul.careers > li hr {
+      background: white;
+      height: 3px;
+      display: block;
+      border: 0;
+      padding: 0; }
+
+form {
+  display: inline-block;
+  margin: auto; }
+  form label {
+    display: none; }
+  form input, form textarea {
+    width: 40vw;
+    background: transparent;
+    border: 1px solid white;
+    display: block;
+    padding: 1em;
+    font-family: 'Montserrat';
+    letter-spacing: .25em;
+    color: white;
+    margin-bottom: 1em; }
+    @media (max-width: 767px) {
+      form input, form textarea {
+        width: 80vw; } }
+    form input[type="submit"], form textarea[type="submit"] {
+      text-transform: uppercase; }
+  form textarea {
+    height: 10vh; }
+
+/*# sourceMappingURL=main.css.map */
